@@ -1,0 +1,1164 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AssetDictionary&lt;TKey, TValue&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AssetDictionary&lt;TKey, TValue&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AssetRipper.Core.IO.AssetDictionary`2">
+  
+  
+  <h1 id="AssetRipper_Core_IO_AssetDictionary_2" data-uid="AssetRipper.Core.IO.AssetDictionary`2" class="text-break">Class AssetDictionary&lt;TKey, TValue&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A dictionary class supporting non-unique keys</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html">AccessDictionaryBase</a>&lt;TKey, TValue&gt;</div>
+    <div class="level2"><span class="xref">AssetDictionary&lt;TKey, TValue&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><a class="xref" href="AssetRipper.Core.Parser.Asset.IDependent.html">IDependent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Capacity">AccessDictionaryBase&lt;TKey, TValue&gt;.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Count">AccessDictionaryBase&lt;TKey, TValue&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Keys">AccessDictionaryBase&lt;TKey, TValue&gt;.Keys</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Values">AccessDictionaryBase&lt;TKey, TValue&gt;.Values</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Add__0__1_">AccessDictionaryBase&lt;TKey, TValue&gt;.Add(TKey, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Add_AssetRipper_Core_IO_NullableKeyValuePair__0__1__">AccessDictionaryBase&lt;TKey, TValue&gt;.Add(NullableKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_AddNew">AccessDictionaryBase&lt;TKey, TValue&gt;.AddNew()</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_GetKey_System_Int32_">AccessDictionaryBase&lt;TKey, TValue&gt;.GetKey(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_GetValue_System_Int32_">AccessDictionaryBase&lt;TKey, TValue&gt;.GetValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_SetKey_System_Int32__0_">AccessDictionaryBase&lt;TKey, TValue&gt;.SetKey(Int32, TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_SetValue_System_Int32__1_">AccessDictionaryBase&lt;TKey, TValue&gt;.SetValue(Int32, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Item_System_Int32_">AccessDictionaryBase&lt;TKey, TValue&gt;.Item[Int32]</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_IsReadOnly">AccessDictionaryBase&lt;TKey, TValue&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_IndexOf_AssetRipper_Core_IO_NullableKeyValuePair__0__1__">AccessDictionaryBase&lt;TKey, TValue&gt;.IndexOf(NullableKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Insert_System_Int32_AssetRipper_Core_IO_NullableKeyValuePair__0__1__">AccessDictionaryBase&lt;TKey, TValue&gt;.Insert(Int32, NullableKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_RemoveAt_System_Int32_">AccessDictionaryBase&lt;TKey, TValue&gt;.RemoveAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Clear">AccessDictionaryBase&lt;TKey, TValue&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Contains_AssetRipper_Core_IO_NullableKeyValuePair__0__1__">AccessDictionaryBase&lt;TKey, TValue&gt;.Contains(NullableKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_CopyTo_AssetRipper_Core_IO_NullableKeyValuePair__0__1____System_Int32_">AccessDictionaryBase&lt;TKey, TValue&gt;.CopyTo(NullableKeyValuePair&lt;TKey, TValue&gt;[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_Remove_AssetRipper_Core_IO_NullableKeyValuePair__0__1__">AccessDictionaryBase&lt;TKey, TValue&gt;.Remove(NullableKeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_GetEnumerator">AccessDictionaryBase&lt;TKey, TValue&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="AssetRipper.Core.IO.AccessDictionaryBase-2.html#AssetRipper_Core_IO_AccessDictionaryBase_2_System_Collections_IEnumerable_GetEnumerator">AccessDictionaryBase&lt;TKey, TValue&gt;.IEnumerable.GetEnumerator()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AssetRipper.Core.IO.html">AssetRipper.Core.IO</a></h6>
+  <h6><strong>Assembly</strong>: AssetRipperCommon.dll</h6>
+  <h5 id="AssetRipper_Core_IO_AssetDictionary_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AssetDictionary&lt;TKey, TValue&gt; : AccessDictionaryBase&lt;TKey, TValue&gt;, IList&lt;NullableKeyValuePair&lt;TKey, TValue&gt;&gt;, ICollection&lt;NullableKeyValuePair&lt;TKey, TValue&gt;&gt;, IReadOnlyList&lt;NullableKeyValuePair&lt;TKey, TValue&gt;&gt;, IReadOnlyCollection&lt;NullableKeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;NullableKeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable, IDependent</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The type of the keys in the dictionary.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td><p>The type of the values in the dictionary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2__ctor.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L23">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2__ctor_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.#ctor*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2__ctor" data-uid="AssetRipper.Core.IO.AssetDictionary`2.#ctor">AssetDictionary()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetDictionary()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L25">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2__ctor_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.#ctor*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2__ctor_System_Int32_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.#ctor(System.Int32)">AssetDictionary(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetDictionary(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Capacity.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Capacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L51">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Capacity_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Capacity*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Capacity" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Capacity">Capacity</h4>
+  <div class="markdown level1 summary"><p>The capacity of the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Capacity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Capacity</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Count.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L48">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Count_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Count*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Count" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Count">Count</h4>
+  <div class="markdown level1 summary"><p>The number of pairs in the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Count</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Item_System_Int32_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L135">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Item_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Item*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Item_System_Int32_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Access a pair in the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override NullableKeyValuePair&lt;TKey, TValue&gt; this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to access</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><p>The pair at that index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Item[System.Int32]</span></div>
+  <h5 id="AssetRipper_Core_IO_AssetDictionary_2_Item_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get method is type safe.
+The set method is not necessarily type safe
+and could throw exceptions if used improperly.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Add__0__1_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Add(%600%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L81">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Add_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Add*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Add__0__1_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Add(`0,`1)">Add(TKey, TValue)</h4>
+  <div class="markdown level1 summary"><p>Add a pair to the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Add(TKey key, TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to be added</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Add(TKey, TValue)</span></div>
+  <h5 id="AssetRipper_Core_IO_AssetDictionary_2_Add__0__1__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is not necessarily type safe.
+It could throw exceptions if used improperly.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Add_AssetRipper_Core_IO_NullableKeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Add(AssetRipper.Core.IO.NullableKeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L87">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Add_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Add*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Add_AssetRipper_Core_IO_NullableKeyValuePair__0__1__" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Add(AssetRipper.Core.IO.NullableKeyValuePair{`0,`1})">Add(NullableKeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add a pair to the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Add(NullableKeyValuePair&lt;TKey, TValue&gt; pair)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">pair</span></td>
+        <td><p>The pair to be added</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Add(AssetRipper.Core.IO.NullableKeyValuePair&lt;TKey, TValue&gt;)</span></div>
+  <h5 id="AssetRipper_Core_IO_AssetDictionary_2_Add_AssetRipper_Core_IO_NullableKeyValuePair__0__1___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is not necessarily type safe.
+It could throw exceptions if used improperly.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_AddNew.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.AddNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L96">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_AddNew_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.AddNew*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_AddNew" data-uid="AssetRipper.Core.IO.AssetDictionary`2.AddNew">AddNew()</h4>
+  <div class="markdown level1 summary"><p>Add a new pair to the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddNew()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.AddNew()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Clear.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L188">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Clear_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Clear*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Clear" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Clear()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Contains_AssetRipper_Core_IO_NullableKeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Contains(AssetRipper.Core.IO.NullableKeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L198">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Contains_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Contains*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Contains_AssetRipper_Core_IO_NullableKeyValuePair__0__1__" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Contains(AssetRipper.Core.IO.NullableKeyValuePair{`0,`1})">Contains(NullableKeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Contains(NullableKeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Contains(AssetRipper.Core.IO.NullableKeyValuePair&lt;TKey, TValue&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_CopyTo_AssetRipper_Core_IO_NullableKeyValuePair__0__1____System_Int32_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.CopyTo(AssetRipper.Core.IO.NullableKeyValuePair%7B%600%2C%601%7D%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L204">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_CopyTo_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.CopyTo*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_CopyTo_AssetRipper_Core_IO_NullableKeyValuePair__0__1____System_Int32_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.CopyTo(AssetRipper.Core.IO.NullableKeyValuePair{`0,`1}[],System.Int32)">CopyTo(NullableKeyValuePair&lt;TKey, TValue&gt;[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CopyTo(NullableKeyValuePair&lt;TKey, TValue&gt;[] array, int arrayIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">arrayIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.CopyTo(AssetRipper.Core.IO.NullableKeyValuePair&lt;TKey, TValue&gt;[], System.Int32)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_EnsureCapacity_System_Int32_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.EnsureCapacity(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L234">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_EnsureCapacity_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.EnsureCapacity*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_EnsureCapacity_System_Int32_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.EnsureCapacity(System.Int32)">EnsureCapacity(Int32)</h4>
+  <div class="markdown level1 summary"><p>Ensures that the capacity of this list is at least the specified <code data-dev-comment-type="paramref" class="paramref">capacity</code>.
+If the current capacity of the list is less than specified <code data-dev-comment-type="paramref" class="paramref">capacity</code>,
+the capacity is increased by continuously twice current capacity until it is at least the specified <code data-dev-comment-type="paramref" class="paramref">capacity</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EnsureCapacity(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>The minimum capacity to ensure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The new capacity of this list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_FetchDependencies_AssetRipper_Core_Parser_Asset_DependencyContext_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.FetchDependencies(AssetRipper.Core.Parser.Asset.DependencyContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L30">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_FetchDependencies_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.FetchDependencies*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_FetchDependencies_AssetRipper_Core_Parser_Asset_DependencyContext_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.FetchDependencies(AssetRipper.Core.Parser.Asset.DependencyContext)">FetchDependencies(DependencyContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PPtr&lt;IUnityObjectBase&gt;&gt; FetchDependencies(DependencyContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.Parser.Asset.DependencyContext.html">DependencyContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="AssetRipper.Core.Classes.Misc.PPtr-1.html">PPtr</a>&lt;<a class="xref" href="AssetRipper.Core.Interfaces.IUnityObjectBase.html">IUnityObjectBase</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_GetKey_System_Int32_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.GetKey(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L99">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_GetKey_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.GetKey*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_GetKey_System_Int32_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.GetKey(System.Int32)">GetKey(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get a key in the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TKey GetKey(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to access</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><p>The key at the specified index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.GetKey(System.Int32)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_GetValue_System_Int32_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.GetValue(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L117">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_GetValue_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.GetValue*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_GetValue_System_Int32_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.GetValue(System.Int32)">GetValue(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get a value in the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TValue GetValue(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to access</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><p>The value at the specified index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.GetValue(System.Int32)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_IndexOf_AssetRipper_Core_IO_NullableKeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.IndexOf(AssetRipper.Core.IO.NullableKeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L154">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_IndexOf_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.IndexOf*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_IndexOf_AssetRipper_Core_IO_NullableKeyValuePair__0__1__" data-uid="AssetRipper.Core.IO.AssetDictionary`2.IndexOf(AssetRipper.Core.IO.NullableKeyValuePair{`0,`1})">IndexOf(NullableKeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int IndexOf(NullableKeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.IndexOf(AssetRipper.Core.IO.NullableKeyValuePair&lt;TKey, TValue&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Insert_System_Int32_AssetRipper_Core_IO_NullableKeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Insert(System.Int32%2CAssetRipper.Core.IO.NullableKeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L157">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Insert_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Insert*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Insert_System_Int32_AssetRipper_Core_IO_NullableKeyValuePair__0__1__" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Insert(System.Int32,AssetRipper.Core.IO.NullableKeyValuePair{`0,`1})">Insert(Int32, NullableKeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Insert(int index, NullableKeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Insert(System.Int32, AssetRipper.Core.IO.NullableKeyValuePair&lt;TKey, TValue&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_Remove_AssetRipper_Core_IO_NullableKeyValuePair__0__1__.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.Remove(AssetRipper.Core.IO.NullableKeyValuePair%7B%600%2C%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L216">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_Remove_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Remove*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_Remove_AssetRipper_Core_IO_NullableKeyValuePair__0__1__" data-uid="AssetRipper.Core.IO.AssetDictionary`2.Remove(AssetRipper.Core.IO.NullableKeyValuePair{`0,`1})">Remove(NullableKeyValuePair&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Remove(NullableKeyValuePair&lt;TKey, TValue&gt; item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AssetRipper.Core.IO.NullableKeyValuePair-2.html">NullableKeyValuePair</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.Remove(AssetRipper.Core.IO.NullableKeyValuePair&lt;TKey, TValue&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L174">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_RemoveAt_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.RemoveAt*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_RemoveAt_System_Int32_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.RemoveAt(System.Int32)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_SetKey_System_Int32__0_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.SetKey(System.Int32%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L108">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_SetKey_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.SetKey*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_SetKey_System_Int32__0_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.SetKey(System.Int32,`0)">SetKey(Int32, TKey)</h4>
+  <div class="markdown level1 summary"><p>Set a key in the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetKey(int index, TKey newKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to access</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">newKey</span></td>
+        <td><p>The new key to be assigned</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.SetKey(System.Int32, TKey)</span></div>
+  <h5 id="AssetRipper_Core_IO_AssetDictionary_2_SetKey_System_Int32__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is not necessarily type safe.
+It could throw exceptions if used improperly.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2_SetValue_System_Int32__1_.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602.SetValue(System.Int32%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L126">View Source</a>
+  </span>
+  <a id="AssetRipper_Core_IO_AssetDictionary_2_SetValue_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.SetValue*"></a>
+  <h4 id="AssetRipper_Core_IO_AssetDictionary_2_SetValue_System_Int32__1_" data-uid="AssetRipper.Core.IO.AssetDictionary`2.SetValue(System.Int32,`1)">SetValue(Int32, TValue)</h4>
+  <div class="markdown level1 summary"><p>Set a value in the dictionary</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetValue(int index, TValue newValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to access</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">newValue</span></td>
+        <td><p>The new value to be assigned</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">AssetRipper.Core.IO.AccessDictionaryBase&lt;TKey, TValue&gt;.SetValue(System.Int32, TValue)</span></div>
+  <h5 id="AssetRipper_Core_IO_AssetDictionary_2_SetValue_System_Int32__1__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is not necessarily type safe.
+It could throw exceptions if used improperly.</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <a class="xref" href="AssetRipper.Core.Parser.Asset.IDependent.html">IDependent</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="AssetRipper.Core.Extensions.IEnumerableExtensions.html#AssetRipper_Core_Extensions_IEnumerableExtensions_IndexOf__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">IEnumerableExtensions.IndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, Boolean&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="AssetRipper.Core.Extensions.IReadOnlyListExtensions.html#AssetRipper_Core_Extensions_IReadOnlyListExtensions_IndexOf__1_System_Collections_Generic_IReadOnlyList___0____0_">IReadOnlyListExtensions.IndexOf&lt;T&gt;(IReadOnlyList&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="AssetRipper.Core.Extensions.IReadOnlyListExtensions.html#AssetRipper_Core_Extensions_IReadOnlyListExtensions_Contains__1_System_Collections_Generic_IReadOnlyList___0____0_">IReadOnlyListExtensions.Contains&lt;T&gt;(IReadOnlyList&lt;T&gt;, T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/AssetRipper/AssetRipper/new/master/apiSpec/new?filename=AssetRipper_Core_IO_AssetDictionary_2.md&amp;value=---%0Auid%3A%20AssetRipper.Core.IO.AssetDictionary%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/AssetRipper/AssetRipper/blob/master/AssetRipperCommon/IO/AssetDictionary.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
